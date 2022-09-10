@@ -1,0 +1,93 @@
+{
+	"pages": [
+		"projects/meeting1/pages/default/index/default_index",
+		"projects/meeting1/pages/about/index/about_index",
+		"projects/meeting1/pages/search/search",
+		"projects/meeting1/pages/my/index/my_index",
+		"projects/meeting1/pages/my/reg/my_reg",
+		"projects/meeting1/pages/my/edit/my_edit",
+		"projects/meeting1/pages/my/foot/my_foot",
+		"projects/meeting1/pages/my/fav/my_fav",
+		"projects/meeting1/pages/news/index/news_index",
+		"projects/meeting1/pages/news/detail/news_detail",
+		"projects/meeting1/pages/admin/news/list/admin_news_list",
+		"projects/meeting1/pages/admin/news/add/admin_news_add",
+		"projects/meeting1/pages/admin/news/edit/admin_news_edit",
+		"projects/meeting1/pages/admin/setup/about/admin_setup_about",
+		"projects/meeting1/pages/admin/setup/about_list/admin_setup_about_list",
+		"projects/meeting1/pages/admin/setup/qr/admin_setup_qr",
+		"projects/meeting1/pages/admin/index/home/admin_home",
+		"projects/meeting1/pages/admin/index/login/admin_login",
+		"projects/meeting1/pages/admin/content/admin_content",
+		"projects/meeting1/pages/admin/mgr/log/admin_log_list",
+		"projects/meeting1/pages/admin/mgr/edit/admin_mgr_edit",
+		"projects/meeting1/pages/admin/mgr/list/admin_mgr_list",
+		"projects/meeting1/pages/admin/mgr/add/admin_mgr_add",
+		"projects/meeting1/pages/admin/mgr/pwd/admin_mgr_pwd",
+		"projects/meeting1/pages/admin/user/list/admin_user_list",
+		"projects/meeting1/pages/admin/user/detail/admin_user_detail",
+		"projects/meeting1/pages/admin/user/export/admin_user_export",
+		"projects/meeting1/pages/enroll/index/enroll_index",
+		"projects/meeting1/pages/enroll/join/enroll_join",
+		"projects/meeting1/pages/enroll/detail/enroll_detail",
+		"projects/meeting1/pages/enroll/my_join_list/enroll_my_join_list",
+		"projects/meeting1/pages/enroll/my_join_detail/enroll_my_join_detail",
+		"projects/meeting1/pages/enroll/join_edit/enroll_join_edit",
+		"projects/meeting1/pages/enroll/calendar/enroll_calendar",
+		"projects/meeting1/pages/admin/enroll/list/admin_enroll_list",
+		"projects/meeting1/pages/admin/enroll/add/admin_enroll_add",
+		"projects/meeting1/pages/admin/enroll/edit/admin_enroll_edit",
+		"projects/meeting1/pages/admin/enroll/join_list/admin_enroll_join_list",
+		"projects/meeting1/pages/admin/enroll/export/admin_enroll_export"
+	],
+	"window": {
+		"backgroundColor": "#f1f1f1",
+		"backgroundTextStyle": "dark",
+		"navigationBarBackgroundColor": "#2870E5",
+		"navigationBarTitleText": "会议室预定小程序",
+		"navigationBarTextStyle": "white"
+	},
+	"tabBar": {
+		"custom": false,
+		"backgroundColor": "#FFFFFF",
+		"color": "#999999",
+		"selectedColor": "#2870E5",
+		"list": [
+			{
+				"pagePath": "projects/meeting1/pages/default/index/default_index",
+				"text": "首页",
+				"iconPath": "/projects/meeting1/images/tabbar/home.png",
+				"selectedIconPath": "/projects/meeting1/images/tabbar/home_cur.png"
+			},
+			{
+				"pagePath": "projects/meeting1/pages/enroll/index/enroll_index",
+				"text": "会议室",
+				"iconPath": "/projects/meeting1/images/tabbar/enroll.png",
+				"selectedIconPath": "/projects/meeting1/images/tabbar/enroll_cur.png"
+			},
+			{
+				"pagePath": "projects/meeting1/pages/enroll/calendar/enroll_calendar",
+				"text": "会议日历",
+				"iconPath": "/projects/meeting1/images/tabbar/day.png",
+				"selectedIconPath": "/projects/meeting1/images/tabbar/day_cur.png"
+			},
+			{
+				"pagePath": "projects/meeting1/pages/my/index/my_index",
+				"text": "我的",
+				"iconPath": "/projects/meeting1/images/tabbar/my.png",
+				"selectedIconPath": "/projects/meeting1/images/tabbar/my_cur.png"
+			}
+		]
+	},
+	"permission": {
+		"scope.userLocation": {
+			"desc": "获取你当前位置信息用于小程序位置接口的效果展示"
+		}
+	},
+	"usingComponents": {
+		"cmpt-comm-list": "/cmpts/public/list/comm_list_cmpt",
+		"cmpt-picker": "/cmpts/public/picker/picker_cmpt",
+		"cmpt-modal": "/cmpts/public/modal/modal_cmpt"
+	},
+	"sitemapLocation": "sitemap.json"
+}

@@ -1,0 +1,30 @@
+<view wx:if="{{isLoad===null}}" class="margin-top load notexist text-l load-project"></view>
+<view wx:if="{{isLoad===false}}" class="margin-top load loading text-l load-project"></view>
+
+<block wx:if="{{isLoad}}">
+	<view class="main">
+		<view class="list">
+			<view class="item">
+				<view class="title">
+					<view class="img-round margin-right-s" />
+					<view class="txt">{{enrollJoin.ENROLL_JOIN_OBJ.name}} </view>
+				</view>
+				<view class="line">会议地址：<text class="text-black">{{enrollJoin.enroll.ENROLL_TITLE}} </text></view>
+				<view class="line">会议日期：<text class="text-black">{{enrollJoin.ENROLL_JOIN_DAY_DESC}}</text></view>
+				<view class="line">会议时间：<text class="text-black">{{enrollJoin.ENROLL_JOIN_START}} ~ {{enrollJoin.ENROLL_JOIN_END_POINT}}</text></view>
+				<view class="line">预 订 人：<text class="text-black">{{enrollJoin.ENROLL_JOIN_OBJ.person}}</text></view>
+				<view class="line">联系电话：<text class="text-black">{{enrollJoin.ENROLL_JOIN_OBJ.tel}}</text></view>
+				<view class="line">预定时间：<text class="text-black">{{enrollJoin.ENROLL_JOIN_ADD_TIME}}</text></view>
+			</view>
+			<view class="item">
+				<view class="line">会议内容：</view>
+				<view class="line"><text class="text-black">{{enrollJoin.ENROLL_JOIN_OBJ.desc||'未填写'}}</text></view>
+			</view>
+		</view>
+
+		<view style="height:100rpx;"></view>
+		<button open-type="share" class="btn-base btn-project shadow shadow-project" style="width:95%">分享会议信息</button>
+	</view>
+
+
+</block>

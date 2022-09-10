@@ -1,0 +1,22 @@
+<view wx:if="{{isLoad===null}}" class="margin-top load notexist text-l load-project"></view>
+<view wx:if="{{isLoad===false}}" class="margin-top load loading text-l load-project"></view>
+
+<block wx:if="{{isLoad}}">
+	<view style="width:100%;background-color: #fff; ">
+		<view class="date-fixed">
+			<date_select selected="{{day}}" bind:select="bindDateSelectCmpt"></date_select>
+			<view class="day-title text-cut">{{enroll.ENROLL_TITLE}}</view>
+		</view>
+		<view class="day-mask"></view>
+
+		<view wx:if="{{!isLoadTime}}" class="margin-top-xxl load loading text-l load-project"></view>
+		<time_select wx:else day="{{day}}" startTimeStep="14" endTimeStep="43" bind:select="bindTimeSelectCmpt" used="{{ used }}">
+		</time_select>
+	</view>
+
+
+	<cmpt-detail mode="right" doTop="{{false}}" doHome="{{true}}" doSlot="{{true}}" topBtnShow="{{topBtnShow}}" oid="{{enroll._id}}" cate="{{enroll.ENROLL_CATE_NAME}}" title="{{enroll.ENROLL_TITLE}}" cover="{{enroll.ENROLL_OBJ.cover[0]}}" qr="{{enroll.ENROLL_QR}}" desc="马上预定会议室" bg="{{skin.PROJECT_COLOR}}">
+
+	</cmpt-detail>
+
+</block>
