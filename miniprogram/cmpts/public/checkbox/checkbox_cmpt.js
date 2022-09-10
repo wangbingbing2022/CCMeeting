@@ -27,7 +27,7 @@ Component({
 	},
 
 	/**
-	 * 生命周期方法
+	 * 生命周 期方法
 	 */
 	lifetimes: {
 		attached: function () { },
