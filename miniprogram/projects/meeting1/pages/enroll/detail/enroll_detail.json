@@ -1,0 +1,9 @@
+{
+	"usingComponents": { 
+		"cmpt-detail": "/cmpts/biz/detail/detail_cmpt",
+		"time_select": "/cmpts/public/calendar/time_select/time_select_cmpt",
+		"date_select": "/cmpts/public/calendar/date_select/date_select_cmpt"
+	},
+	"enablePullDownRefresh": true,  
+	"navigationBarTitleText": "会议室预订"
+}

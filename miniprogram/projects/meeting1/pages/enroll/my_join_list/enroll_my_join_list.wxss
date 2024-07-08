@@ -1,0 +1,58 @@
+@import "../../../style/skin.wxss";
+
+.main {
+	width: 100%;
+	padding: 30rpx 30rpx;
+}
+
+.list {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+}
+
+.list .item {
+	width: 100%;
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	justify-content: flex-start;
+	background-color: #fff;
+	border-radius: 20rpx;
+	padding: 20rpx 25rpx;
+	margin-bottom: 30rpx;
+}
+
+.list .item .title { 
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	margin-bottom: 20rpx;
+} 
+
+.list .item .title .txt { 
+	font-size: 32rpx;
+	color: #000;
+	font-weight: bold;
+	flex: 1;
+}
+
+.list .item .title .order {
+	color: #fff;
+	background-color: var(--projectColor);
+	padding: 5rpx 25rpx;
+	border-radius: 25rpx;
+}
+
+.list .item .line {
+	width:100%;
+	color:#999;
+	font-size:28rpx;
+	padding: 10rpx 35rpx;
+}
+
+.list .item  .oprt {
+	width:100%;
+	text-align: right;
+}

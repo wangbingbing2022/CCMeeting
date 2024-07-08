@@ -1,0 +1,34 @@
+@import "../../../style/skin.wxss";
+
+page {
+	background-color: #fff;
+}
+
+.main-enroll-detail {
+	width: 100%;
+}
+
+.date-fixed {
+	position: fixed;
+	top: 0;
+	background-color: #fff;
+	width: 100%;
+}
+
+.day-title {
+	width: 100%;
+	background-color: #fff;
+	font-size: 30rpx;
+	font-weight: bold;
+	text-align: center;
+	padding: 0 15rpx;
+	height: 60rpx;
+	line-height: 60rpx;
+}
+
+.day-mask {
+	width: 100%;
+	height: 280rpx;
+	background-color: #fff;
+}
+ 

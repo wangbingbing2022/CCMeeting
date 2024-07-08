@@ -1,0 +1,48 @@
+<view wx:if="{{!_params}}" class="margin-top load loading text-l load-project"></view>
+<block wx:else>
+
+	<cmpt-comm-list type="enroll-list" _params="{{_params}}" search="{{search}}" _menus="{{sortMenus}}" _items="{{sortItems}}" sortMenusDefaultIndex="0" route="enroll/list" topBottom="120" isTotalMenu="{{false}}" placeholder="搜索" bind:list="bindCommListCmpt">
+
+		<!-- List Begin -->
+		<view class="main">
+			<view class="list">
+				<view class="item" wx:for="{{dataList.list}}" wx:key="key" bindtap="url" data-url="../detail/enroll_detail?id={{item._id}}">
+					<view class="top-line">
+						<view class="left">
+							<view class="title">
+								<view class="img-round margin-right-xs" />
+								<view class="txt content-cut-one">{{item.ENROLL_TITLE}}</view>
+							</view>
+							<view class="tag-list">
+								<view wx:for="{{item.ENROLL_OBJ.tools}}" wx:key="key" wx:for-item="itm" class="tag small radius bg-orange light">{{itm}}</view>
+							</view>
+						</view>
+
+					</view>
+
+
+					<view class="bottom-line">
+						<view class="num"><text class="icon-friend margin-right-xxs"></text>{{item.ENROLL_OBJ.person}}</view>
+						<view class="order">预定</view>
+					</view>
+				</view>
+			</view> 
+
+		</view>
+
+		<!-- List END -->
+
+		<!--load begin-->
+		<import src="../../../../../tpls/public/list_load_tpl.wxml" />
+		<template is="listLoadTpl" data="{{skin:'load-project',dataList}}" />
+		<!--load end-->
+
+	</cmpt-comm-list>
+
+
+	<block wx:if="{{skin.IS_SUB}}">
+		<import src="../../tpls/menu_tpl.wxml" />
+		<template is="menuTpl" data="{{skin,curMenu:'enroll_index',returnHome}}" />
+	</block>
+
+</block>

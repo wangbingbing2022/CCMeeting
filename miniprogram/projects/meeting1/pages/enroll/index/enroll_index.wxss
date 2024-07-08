@@ -1,0 +1,92 @@
+@import "../../../style/skin.wxss";
+
+.main {
+	width: 100%;
+	padding: 30rpx 30rpx;
+}
+
+.list {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+}
+
+.list .item {
+	width: 100%;
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	justify-content: flex-start;
+	background-color: #fff;
+	border-radius: 20rpx;
+	padding: 20rpx 25rpx;
+	margin-bottom: 30rpx;
+}
+
+.list .item .top-line {
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.list .item .top-line .left {
+	flex: 1;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+.list .item .top-line .left .title {
+	flex: 1;
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+
+.list .item .top-line .title .txt {
+	font-size: 32rpx;
+	color: #000;
+	font-weight: bold;
+	flex: 1;
+}
+
+
+.list .item .top-line .pic {
+	width: 130rpx;
+	height: 90rpx;
+	border-radius: 10rpx;
+	opacity: .9;
+}
+
+
+.list .item .tag-list {
+	width: 100%;
+	margin-top: 20rpx;
+}
+
+.list .item .bottom-line {
+	margin-top: 20rpx;
+	border-top: 1rpx dashed #ccc;
+	font-size: 26rpx;
+	width: 100%;
+	display: flex;
+	align-content: center;
+	justify-content: space-between;
+	padding: 20rpx 0rpx 0rpx;
+}
+
+.list .item .bottom-line .num {
+	width: 200rpx;
+}
+
+.list .item .bottom-line .order {
+	color: #fff;
+	background-color: var(--projectColor);
+	padding: 5rpx 25rpx;
+	border-radius: 25rpx;
+	margin-right:20rpx;
+}
